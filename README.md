@@ -1,4 +1,4 @@
-# Express Bookmarks Client
+# Express Bookmarks Server
 
 This is an example server designed to learn organization and development of an Express App
 
