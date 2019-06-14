@@ -4,6 +4,7 @@ const morgan = require('morgan')
 const cors = require('cors')
 const helmet = require('helmet')
 const logger = require('./logger')
+const bookmarksRouter = require('./bookmarks/bookmarks-router')
 const { NODE_ENV } = require('./config')
 
 const app = express()
@@ -28,6 +29,7 @@ app.use(morgan(morganOption))
 app.use(cors())
 app.use(helmet())
 
+app.use(bookmarksRouter)
 app.get('/', (req, res) => {
   res.send('Hello, world!')
 })
