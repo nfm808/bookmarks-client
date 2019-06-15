@@ -65,7 +65,7 @@ bookmarksRouter
 
     return res
       .status(200)
-      .send(bookmark)
+      .json(bookmark)
   })
   .delete((req, res) => {
     const { id } = req.params
